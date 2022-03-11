@@ -1,0 +1,26 @@
+@import "../variables";
+// colors
+$nav-link-color: $white;
+$nav-link-hover-color: $white;
+
+// sizes
+$navbar-brand-font-size: 2rem;
+
+// spacing
+$nav-link-padding-y: 1rem;
+
+// classes
+.nav-item.active {
+	.nav-link::after {
+		opacity: 1;
+	}
+}
+.nav-item {
+	&:hover {
+		.nav-link {
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}

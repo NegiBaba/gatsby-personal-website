@@ -1,0 +1,32 @@
+@import "../../styles/custom.scss";
+.custom-nav {
+	padding: 12px;
+	background-color: black;
+}
+.brand-title {
+	color: $white;
+	font-family: $heading-font-family;
+}
+.link {
+	position: relative;
+	margin: 0 7px;
+	font-family: $body-font-family;
+}
+.link::after:hover {
+	opacity: 1;
+}
+.link::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	height: 6px;
+	width: 6px;
+	background: #fff;
+	border-radius: 50%;
+	opacity: 0;
+	transform: translateX(-50%);
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}

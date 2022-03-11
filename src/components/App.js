@@ -1,9 +1,10 @@
 import * as React from "react";
+import NavigationBar from "./NavigationBar/NavigationBar";
 
 const App = () => {
 	return (
 		<>
-			<h1>hello world</h1>
+			<NavigationBar />
 		</>
 	);
 };
