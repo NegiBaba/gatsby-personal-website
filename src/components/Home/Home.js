@@ -20,12 +20,10 @@ const Home = () => {
 		"안녕하세요",
 	];
 	const [index, setIndex] = useState(0);
-	// const [message, setMessage] = useState(helloList[index]);
 
 	useEffect(() => {
 		setTimeout(() => {
 			setIndex((index + 1) % helloList.length);
-			console.log("index ", helloList[index]);
 		}, 3000);
 	});
 
