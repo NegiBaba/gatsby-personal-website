@@ -1,0 +1,47 @@
+@import "../../styles/custom.scss";
+
+.home-container {
+	color: $white;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	font-family: $body-font-family;
+	background-color: $black-secondary;
+	clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+}
+
+.heading-text {
+	font-size: 4.5rem;
+	font-family: $heading-font-family;
+}
+
+.sub-heading-container {
+	margin: 10px 0 40px 0;
+}
+
+.sub-heading {
+	padding: 0 14px;
+	font-weight: 400;
+	position: relative;
+
+	&::after {
+		top: 50%;
+		width: 8px;
+		content: "";
+		height: 8px;
+		margin-left: 10px;
+		border-radius: 50%;
+		position: absolute;
+		transform: translateY(-50%);
+		background-color: $white-secondary;
+	}
+
+	&:last-child::after {
+		all: unset;
+	}
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+}
