@@ -1,10 +1,46 @@
 .section {
 	padding: 80px 0;
+	text-align: center;
+	font-family: $body-font-family;
+
+	.section-heading {
+		font-size: 2rem;
+		font-family: $heading-font-family;
+	}
+
+	.heading-separator {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: $body-font-family;
+
+		i {
+			padding: 0 4px;
+			font-size: 1.25rem;
+			color: $black-primary;
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			height: 2px;
+			width: 30px;
+			opacity: 0.3;
+			display: inline-flex;
+			background-color: $black-secondary;
+		}
+	}
+
+	.section-sub-heading {
+		opacity: 0.6;
+		margin: 8px 0px 16px;
+	}
 }
 
 .cta-button {
 	width: 200px;
 	color: $white;
+	cursor: pointer;
 	padding: 12px 24px;
 	margin-bottom: 20px;
 	border-radius: 18px;

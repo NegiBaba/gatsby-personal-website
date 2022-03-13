@@ -1,0 +1,12 @@
+@import "../../styles/custom.scss";
+.description-container {
+	margin-top: 3rem;
+
+	h3 {
+		font-family: $heading-font-family;
+
+		span {
+			font-weight: 600;
+		}
+	}
+}

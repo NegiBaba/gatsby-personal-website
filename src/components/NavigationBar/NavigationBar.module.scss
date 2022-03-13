@@ -1,10 +1,11 @@
 @import "../../styles/custom.scss";
 .custom-nav {
-	padding: 12px;
+	padding: 12px 0;
 	background-color: transparent;
+	transition: all 0.5s ease-in-out;
 }
 .brand-title {
-	color: $white;
+	color: var(--color-nav-link);
 	font-family: $heading-font-family;
 }
 .link {
@@ -22,11 +23,20 @@
 	bottom: 10%;
 	height: 6px;
 	width: 6px;
-	background: #fff;
+	background: var(--color-nav-link);
 	border-radius: 50%;
 	opacity: 0;
 	transform: translateX(-50%);
 	-webkit-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
+}
+.toggle-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon-color {
+	font-size: 1.5rem;
+	color: var(--color-nav-link);
 }
