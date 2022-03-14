@@ -1,5 +1,5 @@
 import * as React from "react";
-import { descriptionContainer, descriptionHeading } from "./About.module.scss";
+import { descriptionContainer, descriptionText } from "./About.module.scss";
 
 const About = () => {
 	return (
@@ -14,7 +14,7 @@ const About = () => {
 							<div className="heading-separator">
 								<i className="bi bi-asterisk"></i>
 							</div>
-							<div className="section-sub-heading">
+							<div className="section-sub-heading text-mute">
 								Strive for perfection in everything you do. Take the best that
 								exists and make it better. When it does not exist, design it.
 							</div>
@@ -25,8 +25,20 @@ const About = () => {
 					<div className="col-lg-12">
 						<div className={descriptionContainer}>
 							<h3>
-								Hello!<span> My name is Piyush Negi.</span>
+								Hello!<span> I&#39;M Piyush Negi.</span>
 							</h3>
+							<div className="sub-title-list m-0 pt-3 text-mute">
+								<h6 className="sub-title">Web Developer</h6>
+								<h6 className="sub-title">Photgrapher</h6>
+								<h6 className="sub-title">Apple orchardist</h6>
+							</div>
+							<div className={descriptionText}>
+								A 4th year Computer Science and Engineering student in Lovely
+								Professional University, Phagwara. I love to challange myself to
+								do things that others find hard and sometimes impossible. I am
+								passionate about learning and teaching the stuff that I know
+								verbally as well as practically.
+							</div>
 						</div>
 					</div>
 				</div>
