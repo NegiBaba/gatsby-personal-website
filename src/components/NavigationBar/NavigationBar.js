@@ -4,21 +4,22 @@ import {
 	customNav,
 	brandTitle,
 	link,
-	toggleIcon,
 	iconColor,
 } from "./NavigationBar.module.scss";
 
 const NavigationBar = () => {
 	const [navColor, setNavColor] = useState("nav_type--home");
 	const changeNavColor = () => {
-		if (window.scrollY >= 50) {
+		if (window !== "undefined" && window.scrollY >= 50) {
 			setNavColor("nav_type--other");
 		} else {
 			setNavColor("nav_type--home");
 		}
 	};
 
-	window.addEventListener("scroll", changeNavColor);
+	if (window !== "undefined") {
+		window.addEventListener("scroll", changeNavColor);
+	}
 
 	return (
 		<nav

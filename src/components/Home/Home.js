@@ -4,8 +4,6 @@ import { SwitchTransition, CSSTransition } from "react-transition-group";
 import {
 	homeContainer,
 	headingText,
-	subHeadingContainer,
-	subHeading,
 	buttonContainer,
 } from "./Home.module.scss";
 
