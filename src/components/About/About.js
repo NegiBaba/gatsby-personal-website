@@ -28,9 +28,9 @@ const About = () => {
 								Hello!<span> I&#39;M Piyush Negi.</span>
 							</h3>
 							<div className="sub-title-list m-0 pt-3 text-mute">
-								<h6 className="sub-title">Web Developer</h6>
-								<h6 className="sub-title">Photgrapher</h6>
-								<h6 className="sub-title">Apple orchardist</h6>
+								<h6 className="sub-title">Challanger</h6>
+								<h6 className="sub-title">Quick Learner</h6>
+								<h6 className="sub-title">Perfectionist</h6>
 							</div>
 							<div className={descriptionText}>
 								A 4th year Computer Science and Engineering student in Lovely
