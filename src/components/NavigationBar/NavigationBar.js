@@ -1,9 +1,30 @@
 import * as React from "react";
-import { customNav, brandTitle, link } from "./NavigationBar.module.scss";
+import { useState } from "react";
+import {
+	customNav,
+	brandTitle,
+	link,
+	iconColor,
+} from "./NavigationBar.module.scss";
 
 const NavigationBar = () => {
+	const [navColor, setNavColor] = useState("nav_type--home");
+	const changeNavColor = () => {
+		if (typeof window !== "undefined" && window.scrollY >= 50) {
+			setNavColor("nav_type--other");
+		} else {
+			setNavColor("nav_type--home");
+		}
+	};
+
+	if (typeof window !== "undefined") {
+		window.addEventListener("scroll", changeNavColor);
+	}
+
 	return (
-		<nav className={`navbar fixed-top navbar-expand-lg ${customNav}`}>
+		<nav
+			className={`navbar fixed-top navbar-expand-lg ${customNav} ${navColor}`}
+		>
 			<div className="container">
 				<span className={`navbar-brand mb-0 h1 fw-bold ${brandTitle}`}>
 					Navbar
@@ -17,7 +38,9 @@ const NavigationBar = () => {
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span className="navbar-toggler-icon"></span>
+					<span className="navbar-toggler-icon d-flex justify-content-center align-items-center">
+						<i className={`bi bi-justify ${iconColor}`}></i>
+					</span>
 				</button>
 				<div
 					className="collapse navbar-collapse justify-content-end"

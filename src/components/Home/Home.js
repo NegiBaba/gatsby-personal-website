@@ -4,15 +4,13 @@ import { SwitchTransition, CSSTransition } from "react-transition-group";
 import {
 	homeContainer,
 	headingText,
-	subHeadingContainer,
-	subHeading,
 	buttonContainer,
 } from "./Home.module.scss";
 
 const Home = () => {
 	const helloList = [
-		"नमस्ते",
 		"Hello",
+		"नमस्ते",
 		"こんにちわ",
 		"Hola",
 		"你好",
@@ -46,12 +44,10 @@ const Home = () => {
 						<div className={headingText}>
 							I am <b>Piyush</b>
 						</div>
-						<div
-							className={`d-flex justify-content-center ${subHeadingContainer}`}
-						>
-							<h6 className={subHeading}>Web Developer</h6>
-							<h6 className={subHeading}>Photgrapher</h6>
-							<h6 className={subHeading}>Apple orchardist</h6>
+						<div className="d-flex justify-content-center sub-title-list">
+							<h6 className="sub-title">Web Developer</h6>
+							<h6 className="sub-title">Photgrapher</h6>
+							<h6 className="sub-title">Apple orchardist</h6>
 						</div>
 						<div className={buttonContainer}>
 							<div className="cta-button">Download resume</div>
