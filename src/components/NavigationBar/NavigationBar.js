@@ -9,17 +9,17 @@ import {
 
 const NavigationBar = () => {
 	const [navColor, setNavColor] = useState("nav_type--home");
-	const changeNavColor = () => {
-		if (typeof window !== "undefined" && window.scrollY >= 50) {
-			setNavColor("nav_type--other");
-		} else {
-			setNavColor("nav_type--home");
-		}
-	};
+	// const changeNavColor = () => {
+	// 	if (typeof window !== "undefined" && window.scrollY >= 50) {
+	// 		setNavColor("nav_type--other");
+	// 	} else {
+	// 		setNavColor("nav_type--home");
+	// 	}
+	// };
 
-	if (typeof window !== "undefined") {
-		window.addEventListener("scroll", changeNavColor);
-	}
+	// if (typeof window !== "undefined") {
+	// 	window.addEventListener("scroll", changeNavColor);
+	// }
 
 	return (
 		<nav
