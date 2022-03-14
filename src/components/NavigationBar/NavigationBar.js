@@ -10,14 +10,14 @@ import {
 const NavigationBar = () => {
 	const [navColor, setNavColor] = useState("nav_type--home");
 	const changeNavColor = () => {
-		if (window !== "undefined" && window.scrollY >= 50) {
+		if (window !== undefined && window.scrollY >= 50) {
 			setNavColor("nav_type--other");
 		} else {
 			setNavColor("nav_type--home");
 		}
 	};
 
-	if (window !== "undefined") {
+	if (window !== undefined) {
 		window.addEventListener("scroll", changeNavColor);
 	}
 
