@@ -2,7 +2,7 @@ import * as React from "react";
 import App from "../components/App";
 import "../styles/custom.scss";
 import "bootstrap";
-import "bootstrap-icons/font/bootstrap-icons.css";
+// import "bootstrap-icons/font/bootstrap-icons.css";
 
 const IndexPage = () => {
 	return <App />;
