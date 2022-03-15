@@ -28,13 +28,13 @@ const About = () => {
 								Hello!<span> I&#39;M Piyush Negi.</span>
 							</h3>
 							<div className="sub-title-list m-0 pt-3 text-mute">
-								<h6 className="sub-title">Challanger</h6>
+								<h6 className="sub-title">Challenger</h6>
 								<h6 className="sub-title">Quick Learner</h6>
 								<h6 className="sub-title">Perfectionist</h6>
 							</div>
 							<div className={descriptionText}>
 								A 4th year Computer Science and Engineering student in Lovely
-								Professional University, Phagwara. I love to challange myself to
+								Professional University, Phagwara. I love to challenge myself to
 								do things that others find hard and sometimes impossible. I am
 								passionate about learning and teaching the stuff that I know
 								verbally as well as practically.
