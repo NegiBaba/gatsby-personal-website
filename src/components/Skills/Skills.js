@@ -3,10 +3,12 @@ import jsIcon from "./img/javascript.svg";
 import reactIcon from "./img/react.svg";
 import gitIcon from "./img/git.svg";
 import javaIcon from "./img/java.svg";
+import reduxIcon from "./img/redux.svg";
 import teamIcon from "./img/team.png";
 import learningIcon from "./img/learning.png";
-import challengeIcon from "./img/challenge.png";
+import cppIcon from "./img/cpp.svg";
 import {
+	skillsSection,
 	skillsContainer,
 	skillCard,
 	skillTitle,
@@ -15,8 +17,8 @@ import {
 
 const Skills = () => {
 	return (
-		<div className={`section ${skillsContainer}`}>
-			<div className="container">
+		<div className={`section ${skillsSection}`}>
+			<div className={`container ${skillsContainer}`}>
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="section-heading-container">
@@ -70,6 +72,16 @@ const Skills = () => {
 					<div className="col-lg-3 col-md-6 col-sm-12">
 						<div className={skillCard}>
 							<img
+								src={reduxIcon}
+								className={skillIcon}
+								alt="Teamwork icon"
+							></img>
+							<div className={skillTitle}>Redux</div>
+						</div>
+					</div>
+					<div className="col-lg-3 col-md-6 col-sm-12">
+						<div className={skillCard}>
+							<img
 								src={teamIcon}
 								className={skillIcon}
 								alt="Teamwork icon"
@@ -90,21 +102,11 @@ const Skills = () => {
 					<div className="col-lg-3 col-md-6 col-sm-12">
 						<div className={skillCard}>
 							<img
-								src={challengeIcon}
+								src={cppIcon}
 								className={skillIcon}
 								alt="Teamwork icon"
 							></img>
-							<div className={skillTitle}>Challenger</div>
-						</div>
-					</div>
-					<div className="col-lg-3 col-md-6 col-sm-12">
-						<div className={skillCard}>
-							<img
-								src={teamIcon}
-								className={skillIcon}
-								alt="Teamwork icon"
-							></img>
-							<div className={skillTitle}>Java</div>
+							<div className={skillTitle}>C / C++</div>
 						</div>
 					</div>
 				</div>

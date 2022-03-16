@@ -1,7 +1,11 @@
 @import "../../styles/custom.scss";
 
-.skills-container {
+.skills-section {
 	background-color: $white-primary;
+}
+
+.skills-container {
+	--bs-gutter-x: 140px;
 }
 
 .skill-card {
