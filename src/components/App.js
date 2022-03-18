@@ -3,6 +3,7 @@ import NavigationBar from "./NavigationBar/NavigationBar";
 import Home from "./Home/Home";
 import About from "./About/About";
 import Skills from "./Skills/Skills";
+import Hobbies from "./Hobbies/Hobbies";
 
 const App = () => {
 	return (
@@ -11,6 +12,7 @@ const App = () => {
 			<Home />
 			<About />
 			<Skills />
+			<Hobbies />
 		</>
 	);
 };

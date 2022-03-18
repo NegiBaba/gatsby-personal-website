@@ -29,7 +29,8 @@ const Skills = () => {
 								<i className="bi bi-asterisk"></i>
 							</div>
 							<div className="section-sub-heading text-mute">
-								Here are some of the skills that I have mastered.
+								In a short span of time I have earned many skills, some of them
+								I have listed below.
 							</div>
 						</div>
 					</div>
