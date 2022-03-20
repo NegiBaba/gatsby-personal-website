@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 import {
 	homeContainer,
+	mainContent,
 	headingText,
 	buttonContainer,
+	bgShadow,
 } from "./Home.module.scss";
 
 const Home = () => {
@@ -27,7 +29,8 @@ const Home = () => {
 
 	return (
 		<section className={`${homeContainer} section`}>
-			<div className="container">
+			<div className={bgShadow}></div>
+			<div className={`container ${mainContent}`}>
 				<div className="row text-center">
 					<div className="col-lg-12">
 						<SwitchTransition mode="out-in">

@@ -27,7 +27,7 @@ const NavigationBar = () => {
 		>
 			<div className="container">
 				<span className={`navbar-brand mb-0 h1 fw-bold ${brandTitle}`}>
-					Navbar
+					Portfolio
 				</span>
 				<button
 					className="navbar-toggler"
@@ -65,11 +65,6 @@ const NavigationBar = () => {
 						<li className="nav-item">
 							<a className={`nav-link ${link}`} href="#home">
 								Projects
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className={`nav-link ${link}`} href="#home">
-								Photography
 							</a>
 						</li>
 						<li className="nav-item">

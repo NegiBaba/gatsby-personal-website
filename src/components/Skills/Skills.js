@@ -9,7 +9,6 @@ import learningIcon from "./img/learning.png";
 import cppIcon from "./img/cpp.svg";
 import {
 	skillsSection,
-	skillsContainer,
 	skillCard,
 	skillTitle,
 	skillIcon,
@@ -18,7 +17,7 @@ import {
 const Skills = () => {
 	return (
 		<div className={`section ${skillsSection}`}>
-			<div className={`container ${skillsContainer}`}>
+			<div className="container">
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="section-heading-container">
@@ -29,8 +28,8 @@ const Skills = () => {
 								<i className="bi bi-asterisk"></i>
 							</div>
 							<div className="section-sub-heading text-mute">
-								In a short span of time I have earned many skills, some of them
-								I have listed below.
+								These are some of the skills that I have aquired and currently
+								improving on them as well.
 							</div>
 						</div>
 					</div>

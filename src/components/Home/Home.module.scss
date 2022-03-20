@@ -4,10 +4,26 @@
 	color: $white;
 	height: 100vh;
 	display: flex;
+	position: relative;
 	align-items: center;
+	background-size: contain;
+	background-position: center;
 	font-family: $body-font-family;
-	background-color: $black-secondary;
+	background-image: url("./bg.jpg");
 	clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+}
+
+.bg-shadow {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-content {
+	z-index: 1040;
 }
 
 .heading-text {
