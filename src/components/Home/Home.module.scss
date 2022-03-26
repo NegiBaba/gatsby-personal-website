@@ -9,7 +9,7 @@
 	background-size: contain;
 	background-position: center;
 	font-family: $body-font-family;
-	background-image: url("./bg.jpg");
+	background-image: url("./bg.webp");
 	clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
 
 	@media (max-width: 768px) {
