@@ -1,7 +1,6 @@
 import * as React from "react";
-import feMentor from "./imgs/FEmentor.jpg";
-import fbImage from "./imgs/facebook.png";
-import socialMedia from "./imgs/social.jpg";
+import { StaticImage } from "gatsby-plugin-image";
+
 import {
 	projectCard,
 	cardImage,
@@ -34,11 +33,11 @@ const Projects = () => {
 				<div className="row mt-5">
 					<div className="col-lg-4">
 						<div className={projectCard}>
-							<img
-								src={feMentor}
+							<StaticImage
 								className={cardImage}
+								src="./imgs/FEmentor.jpg"
 								alt="Front-End mentor"
-							></img>
+							/>
 							<div className={hoverOverlay}>
 								<div className={cardTitle}>Front End Mentor</div>
 								<div className={cardSubTitle}>UI Dev</div>
@@ -47,11 +46,11 @@ const Projects = () => {
 					</div>
 					<div className="col-lg-4">
 						<div className={projectCard}>
-							<img
-								src={fbImage}
+							<StaticImage
 								className={cardImage}
-								alt="Facebook webpage image"
-							></img>
+								src="./imgs/facebook.png"
+								alt="Facebook webpage"
+							/>
 							<div className={hoverOverlay}>
 								<div className={cardTitle}>Facebook helpdesk</div>
 								<div className={cardSubTitle}>Full Stack</div>
@@ -60,11 +59,11 @@ const Projects = () => {
 					</div>
 					<div className="col-lg-4">
 						<div className={projectCard}>
-							<img
-								src={socialMedia}
+							<StaticImage
 								className={cardImage}
+								src="./imgs/social.jpg"
 								alt="Social Media webapp"
-							></img>
+							/>
 							<div className={hoverOverlay}>
 								<div className={cardTitle}>Social Media</div>
 								<div className={cardSubTitle}>Full Stack</div>

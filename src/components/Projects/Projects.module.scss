@@ -2,10 +2,12 @@
 
 .project-card {
 	cursor: pointer;
+	width: 330px;
+	margin: auto;
 	position: relative;
 	transition: all 0.5s;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1280px) {
 		margin-bottom: 30px;
 	}
 
