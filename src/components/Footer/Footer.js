@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
 	return (
-		<div className={`section pb-4 ${footerContainer}`}>
+		<section id="#contact" className={`section pb-4 ${footerContainer}`}>
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12">
@@ -38,7 +38,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

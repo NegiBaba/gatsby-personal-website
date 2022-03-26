@@ -16,7 +16,7 @@ import {
 
 const Skills = () => {
 	return (
-		<div className={`section ${skillsSection}`}>
+		<section id="#skills" className={`section ${skillsSection}`}>
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12">
@@ -111,7 +111,7 @@ const Skills = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

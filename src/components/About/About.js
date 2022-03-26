@@ -3,7 +3,7 @@ import { descriptionContainer, descriptionText } from "./About.module.scss";
 
 const About = () => {
 	return (
-		<div className="section">
+		<section id="#about" className="section">
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12">
@@ -43,7 +43,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

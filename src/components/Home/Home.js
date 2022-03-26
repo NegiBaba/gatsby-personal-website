@@ -28,7 +28,7 @@ const Home = () => {
 	});
 
 	return (
-		<section className={`${homeContainer} section`}>
+		<section id="#home" className={`${homeContainer} section`}>
 			<div className={bgShadow}></div>
 			<div className={`container ${mainContent}`}>
 				<div className="row text-center">

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
 import {
 	customNav,
 	brandTitle,
@@ -7,20 +6,7 @@ import {
 	iconColor,
 } from "./NavigationBar.module.scss";
 
-const NavigationBar = () => {
-	const [navColor, setNavColor] = useState("nav_type--home");
-	const changeNavColor = () => {
-		if (typeof window !== "undefined" && window.scrollY >= 50) {
-			setNavColor("nav_type--other");
-		} else {
-			setNavColor("nav_type--home");
-		}
-	};
-
-	if (typeof window !== "undefined") {
-		window.addEventListener("scroll", changeNavColor);
-	}
-
+const NavigationBar = ({ navColor, section, scrollToSection }) => {
 	return (
 		<nav
 			className={`navbar fixed-top navbar-expand-lg ${customNav} ${navColor}`}
@@ -47,28 +33,67 @@ const NavigationBar = () => {
 					id="navbarLinksToggler"
 				>
 					<ul className="navbar-nav">
-						<li className="nav-item active">
-							<a className={`nav-link ${link}`} href="#home">
+						<li className={`nav-item ${section === "#home" ? "active" : ""}`}>
+							<a
+								className={`nav-link ${link}`}
+								href="#home"
+								data-id="#home"
+								onClick={(event) => {
+									scrollToSection(event.currentTarget.dataset.id);
+								}}
+							>
 								Home
 							</a>
 						</li>
-						<li className="nav-item">
-							<a className={`nav-link ${link}`} href="#about">
+						<li className={`nav-item ${section === "#about" ? "active" : ""}`}>
+							<a
+								className={`nav-link ${link}`}
+								href="#about"
+								data-id="#about"
+								onClick={(event) => {
+									scrollToSection(event.currentTarget.dataset.id);
+								}}
+							>
 								About
 							</a>
 						</li>
-						<li className="nav-item">
-							<a className={`nav-link ${link}`} href="#home">
+						<li className={`nav-item ${section === "#skills" ? "active" : ""}`}>
+							<a
+								className={`nav-link ${link}`}
+								href="#skills"
+								data-id="#skills"
+								onClick={(event) => {
+									scrollToSection(event.currentTarget.dataset.id);
+								}}
+							>
 								Skills
 							</a>
 						</li>
-						<li className="nav-item">
-							<a className={`nav-link ${link}`} href="#home">
+						<li
+							className={`nav-item ${section === "#projects" ? "active" : ""}`}
+						>
+							<a
+								className={`nav-link ${link}`}
+								href="#projects"
+								data-id="#projects"
+								onClick={(event) => {
+									scrollToSection(event.currentTarget.dataset.id);
+								}}
+							>
 								Projects
 							</a>
 						</li>
-						<li className="nav-item">
-							<a className={`nav-link ${link}`} href="#home">
+						<li
+							className={`nav-item ${section === "#contact" ? "active" : ""}`}
+						>
+							<a
+								className={`nav-link ${link}`}
+								href="#contact"
+								data-id="#contact"
+								onClick={(event) => {
+									scrollToSection(event.currentTarget.dataset.id);
+								}}
+							>
 								Contact
 							</a>
 						</li>

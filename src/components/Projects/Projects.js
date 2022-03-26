@@ -12,7 +12,7 @@ import {
 
 const Projects = () => {
 	return (
-		<div className="section ">
+		<section id="#projects" className="section ">
 			<div className="container card-container">
 				<div className="row">
 					<div className="col-lg-12">
@@ -73,7 +73,7 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 export default Projects;
