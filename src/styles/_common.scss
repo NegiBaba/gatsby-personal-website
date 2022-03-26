@@ -9,6 +9,10 @@
 
 	.card-container {
 		--bs-gutter-x: 140px;
+
+		@media (max-width: 768px) {
+			--bs-gutter-x: 15px;
+		}
 	}
 
 	.section-heading {
@@ -60,6 +64,7 @@
 
 .sub-title-list {
 	display: flex;
+	align-items: center;
 	margin: 10px 0 40px 0;
 	justify-content: center;
 

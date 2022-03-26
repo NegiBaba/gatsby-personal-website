@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavigationBar from "./NavigationBar/NavigationBar";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -11,6 +11,12 @@ import Footer from "./Footer/Footer";
 const App = () => {
 	const [navColor, setNavColor] = useState("nav_type--home");
 	const [activeSection, setActiveSection] = useState("#home");
+
+	useEffect(() => {
+		if (typeof window !== "undefined" && window.innerWidth < 768) {
+			setNavColor("nav_type--other");
+		}
+	});
 
 	const handleScroll = () => {
 		let currentSection = "";

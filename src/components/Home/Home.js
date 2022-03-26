@@ -5,6 +5,7 @@ import {
 	homeContainer,
 	mainContent,
 	headingText,
+	subHeading,
 	buttonContainer,
 	bgShadow,
 } from "./Home.module.scss";
@@ -48,9 +49,9 @@ const Home = () => {
 							I am <b>Piyush</b>
 						</div>
 						<div className="d-flex justify-content-center sub-title-list">
-							<h6 className="sub-title">Web Developer</h6>
-							<h6 className="sub-title">Photgrapher</h6>
-							<h6 className="sub-title">Apple orchardist</h6>
+							<h6 className={`sub-title ${subHeading}`}>Web Developer</h6>
+							<h6 className={`sub-title ${subHeading}`}>Photgrapher</h6>
+							<h6 className={`sub-title ${subHeading}`}>Apple orchardist</h6>
 						</div>
 						<div className={buttonContainer}>
 							<div className="cta-button">Download resume</div>
