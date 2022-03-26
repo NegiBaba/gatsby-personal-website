@@ -11,19 +11,34 @@ const Hobbies = () => {
 				<div className="row">
 					<div className="col-lg-4 col-md-4 col-sm-12">
 						<div className={hobbyCard}>
-							<img src={starsIcon} alt="Javascript icon"></img>
+							<img
+								src={starsIcon}
+								alt="Astrophotography icon"
+								height={48}
+								width={48}
+							></img>
 							<div>Astro Photography</div>
 						</div>
 					</div>
 					<div className="col-lg-4 col-md-4 col-sm-12">
 						<div className={hobbyCard}>
-							<img src={frogIcon} alt="Javascript icon"></img>
+							<img
+								src={frogIcon}
+								alt="Macro Photography icon"
+								height={48}
+								width={48}
+							></img>
 							<div>Macro Photography</div>
 						</div>
 					</div>
 					<div className="col-lg-4 col-md-4 col-sm-12">
 						<div className={hobbyCard}>
-							<img src={treesIcon} alt="Javascript icon"></img>
+							<img
+								src={treesIcon}
+								alt="Apple orchard icon"
+								height={48}
+								width={48}
+							></img>
 							<div>Orchard Management</div>
 						</div>
 					</div>
