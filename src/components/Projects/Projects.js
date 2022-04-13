@@ -32,7 +32,14 @@ const Projects = () => {
 				</div>
 				<div className="row mt-5">
 					<div className="col-lg-4">
-						<div className={projectCard}>
+						<div
+							className={projectCard}
+							onClick={() => {
+								window.open(
+									"https://github.com/NegiBaba/FE-Mentor-Challange-01-NFT"
+								);
+							}}
+						>
 							<StaticImage
 								className={cardImage}
 								src="./imgs/FEmentor.jpg"
@@ -45,7 +52,12 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="col-lg-4">
-						<div className={projectCard}>
+						<div
+							className={projectCard}
+							onClick={() => {
+								window.open("https://github.com/NegiBaba/FB_helpdesk");
+							}}
+						>
 							<StaticImage
 								className={cardImage}
 								src="./imgs/facebook.png"
@@ -58,7 +70,12 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="col-lg-4">
-						<div className={projectCard}>
+						<div
+							className={projectCard}
+							onClick={() => {
+								window.open("https://github.com/NegiBaba/SocialMediaWebApp");
+							}}
+						>
 							<StaticImage
 								className={cardImage}
 								src="./imgs/social.jpg"

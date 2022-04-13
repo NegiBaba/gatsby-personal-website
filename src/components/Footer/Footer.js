@@ -4,6 +4,7 @@ import {
 	inputContainer,
 	emailInput,
 	submitButton,
+	icon,
 } from "./Footer.module.scss";
 
 const Footer = () => {
@@ -32,9 +33,22 @@ const Footer = () => {
 				</div>
 				<div className="row">
 					<div className="col-lg-12">
-						<i className="bi bi-github"></i>
-						<i className="bi bi-linkedin"></i>
-						<i className="bi bi-file-person-fill"></i>
+						<i
+							className={`bi bi-github ${icon}`}
+							onClick={() => {
+								window.open("https://github.com/NegiBaba", "_blank");
+							}}
+						></i>
+						<i
+							className={`bi bi-linkedin ${icon}`}
+							onClick={() => {
+								window.open(
+									"https://www.linkedin.com/in/piyushnegi2000",
+									"_blank"
+								);
+							}}
+						></i>
+						<i className={`bi bi-file-person-fill ${icon}`}></i>
 					</div>
 				</div>
 			</div>
